@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<style>
+ body {
+            font-family:  'Times new roman','Lucida Grande','Lucida Sans Regular';
+    }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fc0303;
+  
+}
+
+li {
+  float: left;
+  border-right: 1.5px solid #003300;
+}
+
+li a, .dropbutton {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 16px 18px;
+  text-decoration: none;
+}
+
+
+li.help {
+  display: inline-block;
+}
+
+li.file {
+  display: inline-block;
+}
+
+li.edit{
+  display: inline-block;
+}
+
+.help1 {
+  display: none;
+  position: absolute;
+  background-color:#fc0303;
+  min-width: 160px;
+  box-shadow: 0px 8px 18px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-right: 1.5px solid #003300;
+  
+}
+
+.file1 {
+  display: none;
+  position: absolute;
+  background-color: #fc0303;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-right: 1.5px solid #003300;
+}
+
+.edit1 {
+  display: none;
+  position: absolute;
+  background-color: #fc0303;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-right: 1.5px solid #003300;
+}
+
+.help1 a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.file1 a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.edit1 a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+
+
+.help:hover .help1 {
+  display: block;
+}
+
+.file:hover .file1 {
+  display: block;
+}
+
+.edit:hover .edit1 {
+  display: block;
+}
+
+.text {
+            padding: 30px;
+            margin: 30px;
+            border-radius: 10px;
+            border: 1px solid lightskyblue;
+            background-color: aliceblue;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li class="file">
+    <a class="dropbutton">File</a>
+    <div class="file1">
+      <a href="#">open</a>
+      <a href="#">save</a>
+      <a href="#">print</a>
+      <a href="#">exit</a>
+    </div>
+  </li>
+  
+  <li class="edit">
+    <a class="dropbutton">Edit</a>
+    <div class="edit1">
+      <a href="#">cut</a>
+      <a href="#">copy</a>
+      <a href="#">_________</a>
+      <a href="#">paste</a>
+    </div>
+  </li>
+  
+  <li class="help">
+    <a class="dropbutton">Help</a>
+    <div class="help1">
+      <a href="#">about</a>
+    </div>
+  </li>
+</ul>
+<div class="text">
+        <h1>Sample Web Page</h1>
+        <p>My first web page</p>
+   </div>   
+
+</body>
+</html>
